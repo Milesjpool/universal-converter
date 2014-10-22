@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalConverter.Specs", "UniversalConverter.Specs\UniversalConverter.Specs.csproj", "{CCE9C0D1-758A-4C0E-99C0-AD74342DAC45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalConverter.Web", "UniversalConverter.Web\UniversalConverter.Web.csproj", "{7E3A2BC0-CC53-48C0-99DD-E708B0885319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalConverter.Tests", "UniversalConverter.Tests\UniversalConverter.Tests.csproj", "{13B4A074-A97F-4687-B2E5-4B53DB6008E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCE9C0D1-758A-4C0E-99C0-AD74342DAC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE9C0D1-758A-4C0E-99C0-AD74342DAC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE9C0D1-758A-4C0E-99C0-AD74342DAC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE9C0D1-758A-4C0E-99C0-AD74342DAC45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E3A2BC0-CC53-48C0-99DD-E708B0885319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E3A2BC0-CC53-48C0-99DD-E708B0885319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E3A2BC0-CC53-48C0-99DD-E708B0885319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E3A2BC0-CC53-48C0-99DD-E708B0885319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13B4A074-A97F-4687-B2E5-4B53DB6008E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B4A074-A97F-4687-B2E5-4B53DB6008E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B4A074-A97F-4687-B2E5-4B53DB6008E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B4A074-A97F-4687-B2E5-4B53DB6008E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
