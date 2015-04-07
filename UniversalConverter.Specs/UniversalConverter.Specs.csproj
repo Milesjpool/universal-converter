@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Nancy">
+      <HintPath>..\UniversalConverter.Web\bin\Nancy.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -45,11 +48,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Conversion.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Conversion.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Features\WalkingSkeleton.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WalkingSkeleton.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Steps\Browser.cs" />
+    <Compile Include="Steps\ConversionSteps.cs" />
+    <Compile Include="Steps\ConversionStepsDriver.cs" />
+    <Compile Include="Steps\WalkingSkeletonSteps.cs" />
+    <Compile Include="Steps\WalkingSkeletonStepsDriver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\Conversion.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Conversion.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
+    <None Include="Features\WalkingSkeleton.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>WalkingSkeleton.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

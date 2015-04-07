@@ -1,15 +1,13 @@
-﻿using System.Net;
-using System.Web;
+﻿using Nancy;
 
 namespace UniversalConverter.Web
 {
-    public class HttpHandler : IHttpHandler
+    public class HttpHandler : NancyModule
     {
-        public void ProcessRequest(HttpContext context)
+        public HttpHandler()
         {
-            context.Response.StatusCode = (int) HttpStatusCode.OK;
+            Get["/"] = _ => HttpStatusCode.OK;
+            Get["/convert/{input}"] = parameters => parameters.Input;
         }
-
-        public bool IsReusable { get; private set; }
     }
 }
